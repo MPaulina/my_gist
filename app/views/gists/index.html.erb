@@ -1,0 +1,31 @@
+<div class="show_gists">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Snippet</th>
+      <th>Lang</th>
+      <th>Description</th>
+      <th></th>
+      <th>Actions</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gists.each do |gist| %>
+      <tr>
+        <td><%= gist.id %></td>
+        <td><%= gist.snippet %></td>
+        <td><%= gist.lang %></td>
+        <td><%= gist.description %></td>
+        <td><%= link_to 'Show', gist, :class=>"btn btn-sm btn-default" %></td>
+        <td><%= link_to 'Edit', edit_gist_path(gist), :class=>"btn btn-sm btn-primary" %></td>
+        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?'}, :class=>"btn btn-sm btn-warning" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>

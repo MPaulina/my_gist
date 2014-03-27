@@ -1,0 +1,37 @@
+
+<div class="gists">
+
+<div class="alert">
+<% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+<% end %>
+</div>
+
+
+<p>
+
+<div class="style_gist">
+  <strong>Lang:</strong>
+  <%= @gist.lang %>
+</div>
+</p>
+<p>
+  <strong>Snippet:</strong>
+</p>
+<div class="style_gist">
+<%= raw Pygments.highlight(@gist.snippet) %>
+</div>
+<p>
+	<div class="style_gist">
+  <strong>Description:</strong>
+
+  <%= @gist.description %>
+</div>
+</p>
+
+</br></br>
+
+<%= link_to 'Back', gists_path, :class=>"btn btn-sm btn-default" %> |
+<%= link_to 'Edit', edit_gist_path(@gist), :class=>"btn btn-sm btn-primary" %>
+
+</div>

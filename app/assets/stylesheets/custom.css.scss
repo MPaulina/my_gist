@@ -1,0 +1,98 @@
+@import "bootstrap";
+
+body {
+  padding-left: 70px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-right: 70px;
+}
+
+th {
+	text-align: center;
+}
+
+strong {
+	font-size: 19px;
+}
+
+h2 {
+	color: #006633;
+}
+
+.alert {
+	font-size: 20px;
+	text-align: center;
+	width: 1065px;
+}
+
+.col-sm-4 {
+	width: 100%;
+}
+
+.panel-title {
+	text-align: center;
+	font-size: 40px;
+}
+
+.panel-title2 {
+	background-color: #66cc66;
+	background-color: transparent;
+	border: solid;
+	border-radius: 10px;
+	border-width: 0.5px;
+	border-color: #66cc66;
+	width: 1085px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.container {
+	padding-top: 100px;
+}
+
+.panel-body {
+	width: 100%;
+	text-align: center;
+}
+
+.new_gist {
+	font-size: 18px;
+	text-align: center;
+}
+
+.edit_gist {
+	font-size: 18px;
+	text-align: center;
+}
+
+.show_gists {
+	font-size: 18px;
+	width: 100%;
+}
+
+.list-group-item {
+	font-size: 20px;
+
+}
+
+.gists {
+	font-size: 18px;
+	text-align: center;
+	width: 1100px;
+}
+
+.table {
+	border-radius: 5px;
+	background-color: #e6e6e6;
+	font-size: 18px;
+	width: 1085px;
+	text-align: center;
+}
+
+.btn {
+	width: 80px;
+}
+
+.style_gist {
+	font-size: 18px;
+}
