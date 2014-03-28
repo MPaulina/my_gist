@@ -25,3 +25,4 @@ group :production do
 end
 
 gem 'bootstrap-sass'
+gem 'sass-rails', '~> 4.0.0'
