@@ -22,4 +22,5 @@ Wykorzystane gemy:
 TODO:
 - zmiana widoków,
 - zmiana czcionki,
-- zmiana rozmiaru textarea
+- zmiana rozmiaru textarea,
+- wykorzystanie Bootstrap
