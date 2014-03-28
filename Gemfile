@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.3'
 
+gem 'heroku'
+
 group :development do
   gem 'sqlite3', '1.3.8'
   gem 'quiet_assets'
@@ -24,5 +26,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-gem 'bootstrap-sass'
+#Saas for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+
+gem 'bootstrap-sass'
