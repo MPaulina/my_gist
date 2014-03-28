@@ -10085,3 +10085,32 @@ Processing by GistsController#index as HTML
   [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
   Rendered gists/index.html.erb within layouts/application (23.9ms)
 Completed 200 OK in 127ms (Views: 95.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-28 10:43:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 125ms (Views: 93.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-28 10:43:30 +0100
+Processing by GistsController#index as HTML
+  [1m[36mGist Load (0.5ms)[0m  [1mSELECT "gists".* FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-03-28 10:43:31 +0100
+Processing by GistsController#index as HTML
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists"
+  Rendered gists/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-03-28 10:43:54 +0100
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (21.3ms)
+  Rendered gists/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
