@@ -23,4 +23,5 @@ TODO:
 - zmiana widoków,
 - zmiana czcionki,
 - zmiana rozmiaru textarea,
-- wykorzystanie Bootstrap
+- wykorzystanie Bootstrap,
+- dodany arkusz stylów custom.css.scss
