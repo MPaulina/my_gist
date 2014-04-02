@@ -17,6 +17,9 @@ Wykorzystane gemy:
 - gem 'redcarpet'
 - gem 'quiet_assets'
 - gem 'bootstrap-sass'
+- gem 'will_paginate', '~> 3.0.5'
+- gem 'bootstrap-will_paginate', '~> 0.0.10'
+
 
 
 TODO:
@@ -24,4 +27,6 @@ TODO:
 - zmiana czcionki,
 - zmiana rozmiaru textarea,
 - wykorzystanie Bootstrap,
-- dodany arkusz stylów custom.css.scss
+- dodany arkusz stylów custom.css.scss,
+- Infinitiv Scrolling - nie działa tak jak powinien,
+- paginacja
