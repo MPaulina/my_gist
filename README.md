@@ -3,6 +3,9 @@ my_gist
 
 Aplikacja wykonana w technologii Ruby on Rails.
 
+Link:
+http://asi-my-gist.herokuapp.com/
+
 
 Wykorzystane gemy:
 - gem 'rails', '4.0.4'
@@ -20,14 +23,17 @@ Wykorzystane gemy:
 - gem 'will_paginate', '~> 3.0.5'
 - gem 'bootstrap-will_paginate', '~> 0.0.10'
 
-
+Funkcjonalność:
+- dodawanie, edytowanie, usuwanie oraz podgląd - podstawowy CRUD
 
 TODO:
-- zmiana widoków,
+- zmiana widoków - w szczególności strona główna,
 - zmiana czcionki,
-- zmiana rozmiaru textarea,
+- zmiana rozmiaru textarea w szablonie częściowym _form.html.erb,
 - wykorzystanie Bootstrap,
 - dodany arkusz stylów custom.css.scss,
-- Infinitiv Scrolling - nie działa tak jak powinien,
+- Infinite Scrolling - nie działa tak jak powinien,
 - paginacja,
-- wyszukiwanie po języku
+- wyszukiwanie po języku,
+- dodany widok search.html.erb oraz szablon częściowy _gist.html.erb,
+- wypełnienie bazy danych (seed.rb)

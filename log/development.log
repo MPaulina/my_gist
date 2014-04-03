@@ -14531,3 +14531,265 @@ Processing by GistsController#new as HTML
   Rendered gists/_form.html.erb (4.0ms)
   Rendered gists/new.html.erb within layouts/application (5.1ms)
 Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-04-03 13:17:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 1619ms (Views: 1575.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:17:36 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:17:40 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (16.3ms)
+  Rendered gists/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/search" for 127.0.0.1 at 2014-04-03 13:17:41 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/search" for 127.0.0.1 at 2014-04-03 13:17:45 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:17:47 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:17:50 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (3.8ms)
+  Rendered gists/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:17:56 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.5ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/gists/26" for 127.0.0.1 at 2014-04-03 13:18:05 +0200
+Processing by GistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BfnM7yXK278FzlK5nPtSsy466EtqBtEe6xUuWMYRtl8=", "id"=>"26"}
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "26"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.8ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 26]]
+  [1m[36m (167.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/gists
+Completed 302 Found in 182ms (ActiveRecord: 177.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:18:05 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists/25/edit" for 127.0.0.1 at 2014-04-03 13:18:12 +0200
+Processing by GistsController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mGist Load (0.2ms)[0m  SELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1  [["id", "25"]]
+  Rendered gists/_form.html.erb (5.3ms)
+  Rendered gists/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/gists/25" for 127.0.0.1 at 2014-04-03 13:18:48 +0200
+Processing by GistsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BfnM7yXK278FzlK5nPtSsy466EtqBtEe6xUuWMYRtl8=", "gist"=>{"snippet"=>"double k;", "lang"=>"C", "description"=>"test"}, "commit"=>"Update Gist", "id"=>"25"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (46.6ms)[0m  [1mUPDATE "gists" SET "snippet" = ?, "lang" = ?, "description" = ?, "updated_at" = ? WHERE "gists"."id" = 25[0m  [["snippet", "double k;"], ["lang", "C"], ["description", "test"], ["updated_at", Thu, 03 Apr 2014 11:18:48 UTC +00:00]]
+  [1m[35m (196.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/25
+Completed 302 Found in 252ms (ActiveRecord: 243.1ms)
+
+
+Started GET "/gists/25" for 127.0.0.1 at 2014-04-03 13:18:49 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "25"]]
+  Rendered gists/show.html.erb within layouts/application (305.2ms)
+Completed 500 Internal Server Error in 310ms
+
+ActionView::Template::Error (Traceback (most recent call last):
+  File "/home/polina/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/home/polina/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/home/polina/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/home/polina/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/home/polina/.rvm/gems/ruby-2.1.1/gems/pygments.rb-0.5.4/vendor/pygments-main/pygments/lexers/__init__.py", line 81, in get_lexer_by_name
+    raise ClassNotFound('no lexer for alias %r found' % _alias)
+ClassNotFound: no lexer for alias 'C' found
+):
+    19:   <strong>Snippet:</strong>
+    20: </p>
+    21: <div class="style_gist">
+    22: <%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+    23: </div>
+    24: <p>
+    25: 	<div class="style_gist">
+  app/views/gists/show.html.erb:22:in `_app_views_gists_show_html_erb__344423325__625516308'
+
+
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/polina/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-04-03 13:28:56 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:28:59 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (4.2ms)
+  Rendered gists/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:29:01 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:29:42 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (3.6ms)
+  Rendered gists/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:29:45 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/gists/search" for 127.0.0.1 at 2014-04-03 13:29:47 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:29:49 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (4.0ms)
+  Rendered gists/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists/" for 127.0.0.1 at 2014-04-03 13:37:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.4ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 241ms (Views: 197.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/gists/new" for 127.0.0.1 at 2014-04-03 13:37:32 +0200
+Processing by GistsController#new as HTML
+  Rendered gists/_form.html.erb (14.1ms)
+  Rendered gists/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/gists" for 127.0.0.1 at 2014-04-03 13:37:38 +0200
+Processing by GistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BfnM7yXK278FzlK5nPtSsy466EtqBtEe6xUuWMYRtl8=", "gist"=>{"snippet"=>"arg", "lang"=>"vb", "description"=>"rtsed"}, "commit"=>"Create Gist"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 03 Apr 2014 11:37:38 UTC +00:00], ["description", "rtsed"], ["lang", "vb"], ["snippet", "arg"], ["updated_at", Thu, 03 Apr 2014 11:37:38 UTC +00:00]]
+  [1m[35m (235.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/gists/226
+Completed 302 Found in 249ms (ActiveRecord: 241.5ms)
+
+
+Started GET "/gists/226" for 127.0.0.1 at 2014-04-03 13:37:39 +0200
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"226"}
+  [1m[36mGist Load (0.4ms)[0m  [1mSELECT "gists".* FROM "gists" WHERE "gists"."id" = ? LIMIT 1[0m  [["id", "226"]]
+  Rendered gists/show.html.erb within layouts/application (284.5ms)
+Completed 200 OK in 303ms (Views: 300.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/gists" for 127.0.0.1 at 2014-04-03 13:37:46 +0200
+Processing by GistsController#index as HTML
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:9)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:9)
+  [1m[35mGist Load (0.3ms)[0m  SELECT "gists".* FROM "gists" LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  Rendered gists/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/gists/search" for 127.0.0.1 at 2014-04-03 13:37:48 +0200
+Processing by GistsController#search as HTML
+  Rendered gists/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/gists?utf8=%E2%9C%93&search=c&commit=Search" for 127.0.0.1 at 2014-04-03 13:37:53 +0200
+Processing by GistsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "commit"=>"Search"}
+DEPRECATION WARNING: Calling #find(:all) is deprecated. Please call #all directly instead. You have also used finder options. These are also deprecated. Please build a scope instead of using finder options. (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:7)
+DEPRECATION WARNING: Relation#all is deprecated. If you want to eager-load a relation, you can call #load (e.g. `Post.where(published: true).load`). If you want to get an array of records from a relation, you can call #to_a (e.g. `Post.where(published: true).to_a`). (called from search at /home/polina/Nauka/Github/my_gist/app/models/gist.rb:7)
+  [1m[35mGist Load (0.6ms)[0m  SELECT "gists".* FROM "gists" WHERE (lang LIKE '%c%') LIMIT 10 OFFSET 0
+  Rendered gists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.6ms)
