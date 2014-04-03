@@ -3,18 +3,30 @@ class GistsController < ApplicationController
 
   # GET /gists
   # GET /gists.json
+  #def index
+   # get_and_show_gists
+  #end
 
-  def index
-    get_and_show_gists
-  end
-
-  def get_and_show_gists
-    @gists = Gist.paginate(page: params[:page], per_page: 10).order('created_at DESC')
-    respond_to do |format|
+ def index
+    #@gists = Gist.all
+    #@gists = Gist.paginate(page: params[:page], per_page: 8)
+    @gists = Gist.paginate(:page => params[:page]).search(params[:search])
+     respond_to do |format|
       format.html
       format.js
     end
+    
   end
+
+
+
+  #def get_and_show_gists
+   # @gists = Gist.paginate(page: params[:page], per_page: 10).order('created_at DESC')
+    #respond_to do |format|
+     # format.html
+      #format.js
+   # end
+  #end
 
   # GET /gists/1
   # GET /gists/1.json
@@ -29,6 +41,10 @@ class GistsController < ApplicationController
   # GET /gists/1/edit
   def edit
   end
+
+ # def search
+  #  @gists = Gist.search(params[:lang])
+  #end
 
   # POST /gists
   # POST /gists.json

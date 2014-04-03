@@ -29,4 +29,5 @@ TODO:
 - wykorzystanie Bootstrap,
 - dodany arkusz stylów custom.css.scss,
 - Infinitiv Scrolling - nie działa tak jak powinien,
-- paginacja
+- paginacja,
+- wyszukiwanie po języku
