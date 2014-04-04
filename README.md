@@ -37,7 +37,7 @@ TODO:
 - zmiana rozmiaru textarea w szablonie częściowym _form.html.erb,
 - wykorzystanie Bootstrap,
 - dodany arkusz stylów custom.css.scss,
-- Infinite Scrolling - nie działa tak jak powinien,
+- responsywność na stronie głównej (index.html.erb), na stronie z wyszukiwaniem (search.html.erb) oraz na stronie show.html.erb,
 - paginacja,
 - wyszukiwanie po języku,
 - dodany widok search.html.erb oraz szablon częściowy _gist.html.erb,

@@ -1,32 +1,39 @@
-<div class="infinite-scrolling">
- <center> <%= will_paginate %></center>
-</div>
+<div class="container-fluid full-width">
 
-<div class="show_gists">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th></th>
-      <th>Actions</th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="infinite-scrolling">
+    <center> <%= will_paginate %></center>
+  </div>
 
-  <tbody>
-    <% @gists.each do |gist| %>
-      <tr>
-        <td><%= gist.snippet %></td>
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
-        <td><%= link_to 'Show', gist, :class=>"btn btn-sm btn-warning" %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist), :class=>"btn btn-sm btn-primary" %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?'}, :class=>"btn btn-sm btn-warning" %></td>
-      </tr>
+<div class="polozenie">
+   <% @gists.each do |gist| %>
+    <div class="show_gists">
+      </br>
+      <p>
+        <strong>Snippet:</strong>
+      </p>
+      <%= gist.snippet %>
+        </br></br>
+        <p>
+        <strong>Lang:</strong>
+        </p>
+        <%= gist.lang %>
+        </br></br>
+        <p>
+        <strong>Description:</strong>
+        </p>
+        <%= gist.description %>
+        </br>
+      </br>
+        <%= link_to 'Show', gist, :class=>"btn btn-sm btn-warning" %>
+        
+        <%= link_to 'Edit', edit_gist_path(gist), :class=>"btn btn-sm btn-primary" %>
+        
+        <%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?'}, :class=>"btn btn-sm btn-warning" %>
+      </br> </br>
+      </div>
+        </br>  </br>
+      
     <% end %>
-  </tbody>
-</table>
-
+    </br></br>
+  </div>
 </div>

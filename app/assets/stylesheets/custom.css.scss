@@ -15,11 +15,11 @@ strong {
 .alert {
 	font-size: 20px;
 	text-align: center;
-	width: 1065px;
+	width: 100%;
 }
 
 .col-sm-4 {
-	 padding-left: 70px;
+	padding-left: 70px;
   	padding-bottom: 30px;
   	padding-right: 70px;
 	padding-top: 70px;
@@ -31,20 +31,12 @@ strong {
 	font-size: 40px;
 }
 
-.panel-title2 {
-	background-color: #66cc66;
-	background-color: transparent;
-	border: solid;
-	border-radius: 10px;
-	border-width: 0.5px;
-	border-color: #66cc66;
-	width: 1085px;
-	text-align: center;
-	font-size: 22px;
-}
-
 .container {
 	padding-top: 50px;
+}
+
+.panel-heading {
+	width: 100%;
 }
 
 .panel-body {
@@ -55,28 +47,31 @@ strong {
 .new_gist {
 	font-size: 18px;
 	text-align: center;
-	width: 1080px;
+	width: 100%;
 }
 
 .edit_gist {
 	font-size: 18px;
 	text-align: center;
+	width: 100%;
 }
 
 .show_gists {
+	text-align: center;
 	font-size: 18px;
-	width: 100%;
+	border: solid;
+	border-radius: 5px;
+	background-color: #ffffcc;
 }
 
 .list-group-item {
 	font-size: 20px;
-
 }
 
 .gists {
 	font-size: 18px;
 	text-align: center;
-	width: 1125px;
+	width: 100%;
 }
 
 .table {
@@ -96,10 +91,14 @@ strong {
 	text-align: center;
 }
 
-.form-control {
-	width: 1100px;
+.szerokosc {
+	width: 100%;
 }
 
 .szukaj_style {
 	text-align: center;
+}
+
+.polozenie {
+	margin-right: 25px;
 }
