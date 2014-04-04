@@ -3,7 +3,7 @@
 
 <div class="alert">
 <% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
+    <p class="alert alert-info"><%= notice %></p>
 <% end %>
 </div>
 
@@ -15,10 +15,11 @@
   <%= @gist.lang %>
 </div>
 </p>
+
+<div class="style_gist">
 <p>
   <strong>Snippet:</strong>
 </p>
-<div class="style_gist">
 <%= raw Pygments.highlight(@gist.snippet) %>
 </div>
 <p>
@@ -31,7 +32,7 @@
 
 </br></br>
 
-<%= link_to 'Back', gists_path, :class=>"btn btn-sm btn-default" %> |
-<%= link_to 'Edit', edit_gist_path(@gist), :class=>"btn btn-sm btn-primary" %>
+<%= link_to 'Edit', edit_gist_path(@gist), :class=>"btn btn-primary" %>
 
+</br></br>
 </div>

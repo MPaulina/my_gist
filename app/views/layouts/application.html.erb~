@@ -1,7 +1,6 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>MyGist</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,7 +10,7 @@
 <body>
 
     <div class="col-sm-4">
-      <div class="panel panel-primary">
+      <div class="panel panel-success">
         <div class="panel-heading">
           <h2 class="panel-title">Gists</h2>
         </div>
