@@ -18,16 +18,6 @@ class GistsController < ApplicationController
     
   end
 
-
-
-  #def get_and_show_gists
-   # @gists = Gist.paginate(page: params[:page], per_page: 10).order('created_at DESC')
-    #respond_to do |format|
-     # format.html
-      #format.js
-   # end
-  #end
-
   # GET /gists/1
   # GET /gists/1.json
   def show

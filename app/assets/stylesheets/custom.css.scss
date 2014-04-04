@@ -61,7 +61,10 @@ strong {
 	font-size: 18px;
 	border: solid;
 	border-radius: 5px;
+	border-width: 2px;
+	border-color: #0066ff;
 	background-color: #ffffcc;
+	width: 98%;
 }
 
 .list-group-item {
@@ -72,14 +75,6 @@ strong {
 	font-size: 18px;
 	text-align: center;
 	width: 100%;
-}
-
-.table {
-	border-radius: 5px;
-	background-color: #e6e6e6;
-	font-size: 18px;
-	width: 1085px;
-	text-align: center;
 }
 
 .btn {

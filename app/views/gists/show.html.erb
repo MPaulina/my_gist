@@ -1,33 +1,36 @@
 <div class="container-fluid full-width">
-<div class="gists">
+	<div class="gists">
 
-<div class="alert">
-<% if notice %>
-    <p class="alert alert-info"><%= notice %></p>
-<% end %>
-</div>
+		<div class="alert">
+			<% if notice %>
+    			<p class="alert alert-info"><%= notice %></p>
+			<% end %>
+		</div>
 
-<div class="szerokosc">
-<div class="style_gist">
-  <strong>Lang:</strong>
-  <%= @gist.lang %>
-</div>
-</p>
+		<div class="szerokosc">		
+			<div class="style_gist">
+  				<strong>Snippet:</strong>
+					</br></br>
+				<%= raw Pygments.highlight(@gist.snippet) %>
+			</div>
 
-<div class="style_gist">
-  <strong>Snippet:</strong>
-</br>
-<%= raw Pygments.highlight(@gist.snippet) %>
-</div>
-<div class="style_gist">
-  <strong>Description:</strong>
-  <%= @gist.description %>
-</div>
+			<div class="style_gist">
+  				<strong>Lang:</strong>
+  				<%= @gist.lang %>
+			</div>
 
-</br></br>
+			</br>
 
-<%= link_to 'Edit', edit_gist_path(@gist), :class=>"btn btn-primary" %>
-</br></br>
-</div>
-</div>
+			<div class="style_gist">
+  				<strong>Description:</strong>
+  				<%= @gist.description %>
+			</div>
+
+			</br></br>
+
+			<%= link_to 'Edit', edit_gist_path(@gist), :class=>"btn btn-primary" %>
+			
+			</br></br>
+		</div>
+	</div>
 </div>
