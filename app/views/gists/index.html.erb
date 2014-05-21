@@ -1,10 +1,9 @@
 <div class="container-fluid full-width">
 
-	<div id="my-gists">
-    	<%= render @gists %>
+	<div >
+		<%= render :partial => 'shared/gist', :locals => { :gists => @gists } %> 
+    	
 	</div>
 
-	<div id="infinite-scrolling">
-  		<center><%= will_paginate %></center>
-	</div>
+  		<%= link_to 'Load More Gists', gist_path(:page => @gist.next_page), :remote => true if @gist.next_page %>
 </div>

@@ -1,6 +1,6 @@
 <div class="show_gists">
 <br><br>
-
+<% @gists.each do |gist| %>
 <strong>Snippet:</strong>
   </br></br>  
     <%= raw Pygments.highlight(gist.snippet) %>
@@ -16,6 +16,6 @@
      <%= link_to 'Destroy', gist, :class=>"btn btn-info", method: :delete, data: { confirm: 'Are you sure?'} %>
     
     </br></br>
-
+<% end %>
 </div>
 <br><br>

@@ -6,4 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-50.times { |i| Gist.create(snippet: "Post #{i}", lang: "java", description: "abc") }
+20.times { |i| Gist.create(snippet: "int i;", lang: "C", description: "zmienna liczbowa") }
+20.times { |i| Gist.create(snippet: "string name;", lang: "java", description: "lancuch znakow") }
+20.times { |i| Gist.create(snippet: "privste void Function() { };", lang: "C#", description: "funkcja") }
+

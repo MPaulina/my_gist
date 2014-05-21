@@ -10,7 +10,7 @@ class GistsController < ApplicationController
  def index
     #@gists = Gist.all
     #@gists = Gist.paginate(page: params[:page], per_page: 8)
-    @gists = Gist.paginate(:page => params[:page]).search(params[:search])
+   @gists = Gist.paginate(:page => params[:page]).search(params[:search])
      respond_to do |format|
       format.html
       format.js

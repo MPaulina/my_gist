@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 group :development do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3', '1.3.9'
   gem 'quiet_assets'
 end
 
@@ -14,6 +14,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'pygments.rb', '0.5.4'
 gem 'redcarpet', '3.1.1'
+gem 'will_paginate', '~> 3.0.5'
+gem 'haml-rails'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -25,7 +27,6 @@ group :production do
 end
 
 gem 'bootstrap-sass'
-gem 'will_paginate', '~> 3.0.5'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'sass-rails', '~> 4.0.2'
 
